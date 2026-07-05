@@ -1,0 +1,15 @@
+apiVersion: v2
+name: infra-health-checker
+description: Helm chart for the declarative infrastructure health checker
+type: application
+version: 0.1.0
+appVersion: "1.0.0"
+keywords:
+  - monitoring
+  - health-check
+home: https://github.com/Shanks69000/infra-health-checker
+sources:
+  - https://github.com/Shanks69000/infra-health-checker
+maintainers:
+  - name: Shanks69000
+    url: https://github.com/Shanks69000

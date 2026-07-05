@@ -1,0 +1,10 @@
+infra-health-checker déployé en tant que CronJob.
+
+Schedule : {{ .Values.schedule }}
+
+Vérifier les runs :
+  kubectl get cronjob {{ include "infra-health-checker.fullname" . }}
+  kubectl get jobs -l app.kubernetes.io/instance={{ .Release.Name }}
+
+Consulter les logs du dernier job :
+  kubectl logs -l app.kubernetes.io/instance={{ .Release.Name }} --tail=50
